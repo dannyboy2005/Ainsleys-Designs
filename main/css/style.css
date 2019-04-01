@@ -120,7 +120,7 @@ button#prev {
 /* Backgorund Images */
  
 .slide:first-child {
-    background: url('/images/together.jpg') no-repeat
+    background: url('/main/images/together.jpg') no-repeat
       center top/cover;
   }
   .slide:nth-child(2) {
