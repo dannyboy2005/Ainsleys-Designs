@@ -15,17 +15,17 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed">
-    <a class="navbar-brand" href="#">Ainsley's Design's</a>
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#about">Ainsley's Design's</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Products</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="#about">About</a>
+        <a class="nav-item nav-link" href="#products">Products</a>
+        <a class="nav-item nav-link" href="#testimonials">Testimonials</a>
+        <a class="nav-item nav-link" href="#social">Social</a>
       </div>
     </div>
   </nav>
@@ -45,9 +45,9 @@
     <div class="container mt-5" id="about">
         <div class="media row justify-content-center text-center">
             <div class="media-body col">
-                <h2 class="mt-0 mb-1 display-3">About Me</h2>
+                <h2 class="mt-0 mb-1 display-3"><u>About Me</u></h2>
                 <br>
-                    My name is Ainsley Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum veniam, aliquam quam delectus ut aspernatur nulla incidunt nemo tenetur.
+                    <p class="lead">My name is Ainsley Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum veniam, aliquam quam delectus ut aspernatur nulla incidunt nemo tenetur.</p>
             </div>
                 <img class="col mt-4 " src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/54268123_10216292971651328_8611071036596682752_n.jpg?_nc_cat=100&_nc_ht=scontent-lhr3-1.xx&oh=48fef119621cfb590a234af3b27bb9e8&oe=5D076316" ml-3" alt="Me">
         </div>
@@ -55,6 +55,7 @@
 
     <!-- Products -->
     <div class="container" id="products">
+      <h2 class="text-center mt-4 display-3"><u>What I Made Earlier</u></h2>
             <div class="bd-example my-5">
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                       <ol class="carousel-indicators">
@@ -106,55 +107,58 @@
     </div>
 
     <!-- Testimonials -->
-    <div class="container">
+    <div class="container-fluid" id="testimonials">
       <div class="row justify-content-center">
-        <h1 class="display-3">Testimonials</h1>
+        <h2 class="display-3"><u>Testimonials</u></h2>
       </div>
       <br>
-      <div class="justify-content-start my-2">
-        <div class="row"><h3>Daniel, Warrington UK</h3></div>
+      <div id="test-1" class="justify-content-start my-2">
+        <div class="row"><h3><em>Daniel, Warrington UK</em></h3></div>
         <br>
         <div class="row"><p class="lead">I bought one of Ainsley's frames for a birthday gift and it was easily the best thing Ive purchased.</p></div>
       </div>
       <hr>
       <div class="my-2">
-          <div class="row justify-content-end"><h3>Daniel, Warrington UK</h3></div>
+          <div id="test-2" class="row justify-content-end"><h3><em>Daniel, Warrington UK</em></h3></div>
           <br>
           <div class="row justify-content-end"><p class="lead">I bought one of Ainsley's frames for a birthday gift and it was easily the best thing Ive purchased.</p></div>
         </div>
       <hr>
-      <div class="justify-content-start my-2">
-          <div class="row"><h3>Daniel, Warrington UK</h3></div>
+      <div id="test-3" class="justify-content-start my-2">
+          <div class="row"><h3><em>Daniel, Warrington UK</em></h3></div>
           <br>
           <div class="row"><p class="lead">I bought one of Ainsley's frames for a birthday gift and it was easily the best thing Ive purchased.</p></div>
         </div>
     </div>
 
     <!-- Social and contact -->
-    <div class="container">
-      <div class="row justify-content-center my-2">
-        <h1 class="display-3 text-center">Visit My Store</h1>
+    <div class="container" id="social">
+      <div class="row justify-content-center my-4">
+        <h2 class="display-3 text-center"><u>Visit My Store</u></h2>
       </div>
       <br>
       <div class="row justify-content-center">
-        <span><i class="fab fa-facebook-square fa-10x"></i></span>
+        <span><i id="facebook-link" class="fab fa-facebook-square fa-10x"></i></span>
       </div>
       <div class="row justify-content-center text-center my-3">
         <p class="lead">Visit my Facebook store page to view all my products and dont forget to <i class="fas fa-thumbs-up"></i> my page.</p>
       </div>
       <div class="row justify-content-center">
-          <h1 class="display-4 text-center">Follow Me</h1>
+          <h2 class="display-4 text-center"><u>Follow Me</u></h2>
           <br>
       </div>
       <div class="row justify-content-center my-4">
 
-            <a class="p-4" href=""><i class="fab fa-twitter-square fa-5x"></i></a>
-            <a class="p-4" href=""><i class="fab fa-instagram fa-5x"></i></a>
-            <a class="p-4" href=""><i class="fab fa-snapchat-square fa-5x"></i></a>
+            <a id="twitter-link" class="p-4" href=""><i class="fab fa-twitter-square fa-5x"></i></a>
+            <a id="instagram-link" class="p-4" href=""><i class="fab fa-instagram fa-5x"></i></a>
+            <a id="snapchat-link" class="p-4" href=""><i class="fab fa-snapchat-square fa-5x"></i></a>
       </div>
-
     </div>
 
+    <!-- Footer -->
+    <div class="container-fluid p-4">
+      <footer class="text-center lead">Ainsley &copy; 2019</footer>
+    </div>
 
 
 

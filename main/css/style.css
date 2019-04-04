@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Playfair+Display');
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #f0ebf4;
+    background: hsl(198, 34%, 73%);
+}
+
+nav.navbar {
+    opacity: .9;
+}
+
+h2 {
+    color: #e64398;
+}
+
 #about img {
     max-height: 280px;
     max-width: 295px;
@@ -9,4 +25,56 @@
     max-height: 680px;
     min-width: 380px;
     border-radius: 5%;
+}
+
+#testimonials h3{
+    font-family: 'Lobster', cursive;
+}
+
+#testimonials #test-1 {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+    box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+}
+
+#testimonials #test-3 {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+    box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+}
+
+#testimonials p{
+    font-family: 'Indie Flower', cursive;
+}
+
+#facebook-link {
+    color: #4267b2;
+}
+
+#facebook-link:hover {
+    color: #b39bc8;
+}
+
+#twitter-link {
+    color: #38A1F3;
+}
+
+#twitter-link:hover {
+    color: #b39bc8;
+}
+
+#instagram-link {
+    color: #231F20;
+}
+
+#instagram-link:hover {
+    color: #b39bc8;
+}
+
+#snapchat-link {
+    color: #FFFC00;
+}
+
+#snapchat-link:hover {
+    color: #b39bc8;
 }
