@@ -1,80 +1,166 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Playfair+Display');
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Playfair+Display");
 
 body {
-    font-family: 'Playfair Display', serif;
-    color: #f0ebf4;
-    background: hsl(198, 34%, 73%);
+  font-family: "Playfair Display", serif;
+  color: #f0ebf4;
+  background: #f4c4f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc67fa,
+    #f4c4f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fc67fa,
+    #f4c4f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav.navbar {
-    opacity: .9;
+  opacity: 0.8;
+  height: 40px;
 }
 
 h2 {
-    color: #e64398;
+  color: #e64398;
 }
 
 #about img {
-    max-height: 280px;
-    max-width: 295px;
-    border-radius: 50%;
+  max-height: 290px;
+  max-width: 295px;
+  border-radius: 50%;
 }
 
 #products img {
-    min-height: 390px;
-    max-height: 680px;
-    min-width: 380px;
-    border-radius: 5%;
+  min-height: 390px;
+  max-height: 680px;
+  min-width: 380px;
+  /* border-radius: 5%; */
 }
 
-#testimonials h3{
-    font-family: 'Lobster', cursive;
+#testimonials h3 {
+  font-family: "Lobster", cursive;
 }
 
 #testimonials #test-1 {
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
-    box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(241, 114, 161, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(241, 114, 161, 1);
+  box-shadow: 10px 10px 5px 0px rgba(241, 114, 161, 1);
 }
 
 #testimonials #test-3 {
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
-    box-shadow: 10px 10px 5px 0px rgba(241,114,161,1);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(241, 114, 161, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(241, 114, 161, 1);
+  box-shadow: 10px 10px 5px 0px rgba(241, 114, 161, 1);
 }
 
-#testimonials p{
-    font-family: 'Indie Flower', cursive;
+#testimonials p {
+  font-family: "Indie Flower", cursive;
+}
+
+/* Contact form */
+#contact form button {
+  background: #fff;
+  border: solid 1px #000;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+#contact form button:hover {
+  background: rgba(25, 34, 49, 0.9) !important;
+  color: #fff;
+  border-color: #fff;
+  font-size: 1.3rem;
+  transform: translateY(4px);
+}
+
+#contact form label {
+  font-size: 1.4rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  margin-bottom: 1.8rem;
+}
+
+.card img {
+  height: 400px;
+  width: 100%;
+}
+
+.card > div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .card {
+    display: block;
+  }
 }
 
 #facebook-link {
-    color: #4267b2;
+  color: #4267b2;
 }
 
 #facebook-link:hover {
-    color: #b39bc8;
+  color: #b39bc8;
 }
 
 #twitter-link {
-    color: #38A1F3;
+  color: #38a1f3;
 }
 
 #twitter-link:hover {
-    color: #b39bc8;
+  color: #b39bc8;
 }
 
 #instagram-link {
-    color: #231F20;
+  color: #231f20;
 }
 
 #instagram-link:hover {
-    color: #b39bc8;
+  color: #b39bc8;
 }
 
 #snapchat-link {
-    color: #FFFC00;
+  color: #fffc00;
 }
 
 #snapchat-link:hover {
-    color: #b39bc8;
+  color: #b39bc8;
 }
